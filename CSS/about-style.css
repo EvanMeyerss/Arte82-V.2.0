@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../Fonts/raleway.woff2")
+    format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.navbar{
+    position: relative;
+}
+
+.about {
+    width: 100%;
+    align-content: center;
+    display: block;
+    overflow: hidden;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+}
+
+.pic {
+    border-radius: 2%;
+    position: relative;
+    max-width: 30%;
+    margin-left: 7%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    float: left;
+}
+
+h1 {
+    float: right;
+    max-width: 45%;
+    margin-right: 26%;
+    margin-top: 12%;
+    margin-bottom: 1%;
+    font-size: 2.5vw;
+    font-family: "Raleway", Varela Round,arial,sans-serif;
+    font-weight: bolder;
+}
+
+p {
+    float: right;
+    font-family: "Raleway", Varela Round,arial,sans-serif;
+    font-size: 1.5vw;
+    margin-right: 9%;
+    max-width: 45%;
+    text-align: left;
+    align-content: center;
+}

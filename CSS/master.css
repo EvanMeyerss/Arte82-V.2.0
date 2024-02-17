@@ -1,0 +1,92 @@
+/* agbalumo-regular - latin */
+@font-face {
+    font-family: "Agbalumo";
+    src: url("../Fonts/agbalumo.woff2")
+    format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Agbalumo", sans-serif;
+}
+
+body {
+    background-color: rgb(254, 254, 240);
+    height: auto;
+}
+
+#icon {
+    width: 17.5vw;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: rgba(254, 254, 240, .9);
+    border-radius: 0 0 35% 35%;
+    z-index:9999;
+    position: sticky; top: 0;
+    font-family: "Agbalumo",sans-serif;
+    font-size: 1.75vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5%;
+    text-align: center;
+    color: rgb(233, 177, 83);
+    text-shadow: 0.125vw 0.125vw rgb(221, 119, 142);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(233, 177, 83);
+    /*text-shadow: 2px 2px rgb(221, 119, 142);*/
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menuCenter {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.menuR {
+    float: right;
+    width: 30%;
+    list-style: none;
+    /* display: inline-block; */
+    margin: 0 10px;
+    transform: translateX(-4%);
+    text-decoration: none;
+    color: black;
+    /*font-weight: bold;*/
+    text-transform: uppercase;
+
+
+}
+
+.menuL {
+    list-style: none;
+    width: 30%;
+    /*display: inline-block;*/
+    margin: 0 10px;
+    transform: translateX(4%);
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.menuL .subLeft {
+    margin-right: 10%;
+}
+
+.menuR .subLeft{
+    margin-right: 10%;
+}

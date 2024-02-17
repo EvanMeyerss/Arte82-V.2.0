@@ -1,0 +1,27 @@
+body{
+    float:center;
+}
+
+
+h1 {
+    position: static;
+    color: rgb(233, 177, 83);
+    text-shadow: 0.3vw 0.15vw rgb(221, 119, 142);
+    margin-bottom: 1%;
+    margin-top:1.75%;
+    opacity: 1;
+}
+
+.form{
+    /*position: stat;*/
+    display: flex;
+    margin-right: 38%;
+    float: right;
+}
+
+/* input{
+    /*padding: 3%;*/
+    /* width: 10%;
+    height: 30%;
+    margin: 0;
+} */

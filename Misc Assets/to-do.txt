@@ -1,0 +1,33 @@
+To-Do List:
+------------------------------------------------------------------
+
+10/28/2023:
+------------------------------------------------------------------
+ - Add JavaScript to detect orientation of added images
+    - Allows us to set different types of border radii
+    - Allows for us to check the length of columns so the bottom looks more even
+
+    Resource:
+    https://stackoverflow.com/questions/18632356/how-to-extract-image-orientation-information-from-image-loaded-in-canvas
+
+ - In collections.html,
+    - Add collection for artists with a lot of content
+        - Evan
+        - Dylan
+------------------------------------------------------------------
+
+10/30/2023:
+------------------------------------------------------------------
+ - Make the website better for mobile use
+ - Learn how to utilize SQL for automated photo upload
+------------------------------------------------------------------
+
+2/16/2024:
+------------------------------------------------------------------
+ - Optimize photos for faster load times
+    - Compress file size
+    - Determine faster loading methods
+
+ - Fix Collection page look
+
+ -

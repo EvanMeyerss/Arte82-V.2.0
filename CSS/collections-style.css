@@ -1,0 +1,129 @@
+.navbar{
+    position: relative;
+}
+
+
+.collections {
+    background-color:  rgb(254, 254, 240);;
+    text-align: center;
+}
+
+
+.collections a img:hover{
+    transform: scale(1.1);
+    animation: scale 2s ease forwards;
+}
+
+p {
+    font-family: Agbalumo,sans-serif;
+    font-size: 1.5vw;
+    margin-right: 8.5%;
+    text-align: center;
+    align-content: center;
+    margin-top:5%;
+    margin-bottom:5%;
+
+}
+
+/* To ensure responsiveness and readability, consider using media queries */
+@media (max-width: 768px) {
+    .example-element {
+        font-size: 2.5vem; /* Adjust font size for smaller screens */
+    }
+}
+
+
+
+body{
+    /*margin: 2.15%;*/
+    background-color:  rgb(254, 254, 240);
+    font-size: 2.5vw;
+    color: rgb(233, 177, 83);
+    /*text-shadow: 2px 2px rgb(221, 119, 142);*/
+    text-shadow: .125vw .125vw rgb(221, 119, 142);
+}
+
+/* @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  } */
+/* .animation{
+    animation: fade-in 4s ease forwards;
+} */
+
+h1{
+    color: rgb(233, 177, 83);
+    text-shadow: 0.3vw 0.15vw rgb(221, 119, 142);
+    margin-bottom: 3%;
+    margin-top:1.75%;
+    opacity: 1;
+}
+
+
+/* Center the header text */
+h1.text {
+    text-align: center;
+    font-family:Varela Round,arial,sans-serif;
+    margin-top: 20px;
+   
+
+}
+
+/* Create a two-column layout for collections */
+.collectionLeft,
+.collectionRight {
+    max-width: 40%; /* Each collection takes up 50% of the page width */
+    float: left; /* Float collections to the left so they appear side by side */
+    box-sizing: border-box; /* Include padding and border in the width */
+    padding-top: 0px; /* Padding on the top */
+    /*padding-right: 25px; !* Padding on the right *!*/
+    /*padding-bottom: 10px; !* Padding on the bottom *!*/
+    /*padding-left: 25px; !* Padding on the left *!*/
+}
+
+.collectionLeft p,
+.collectionRight p {
+   text-align: center;
+}
+
+/* Ensure collections don't wrap on smaller screens */
+@media (max-width: 768px) {
+    .collectionLeft,
+    .collectionRight {
+        width: 100%; /* On smaller screens, make collections full-width */
+    }
+}
+
+/* Style the images within collections */
+.collectionLeft img,
+.collectionRight img {
+    max-width: 90%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block; /* Remove extra spacing below images */
+    margin: 0 auto; /* Center images within their containers */
+    border-radius: 4%;
+    border-width: 10px;
+    
+}
+
+.collectionLeft {
+    margin-left: 10%;
+}
+
+.collectionRight {
+    margin-right: 1.5%;
+}
+
+.collectionLeft img:hover{
+box-shadow: -0.175vw 0vw 0.3vw rgba(0, 0, 0, 0.5), 0vw .3vw .3vw rgba(0, 0, 0, 0.5);
+}
+
+.collectionRight img:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+

@@ -1,0 +1,29 @@
+------------- Used to paste old code that might be useful in the future -------------
+
+
+Bar Animation Used on Menu Bar
+--------------------------------------
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    transform: translateX(1px);
+
+    /*position: relative;*/
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #bed3f0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+------------------------------
