@@ -14,10 +14,12 @@
     <!--  Style Sheets & Javascripts  -->
     <link rel="stylesheet" href="CSS/master.css">
     <link rel="stylesheet" href="CSS/gallery.css">
+
 <!--    <link rel="stylesheet" type="text/css"-->
 <!--          media="screen and (max-device-width: 480px)"-->
 <!--          href="Stylesheets/gallery-mobile.css"/>-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src ="Modal/collection.js"></script>
 
     <title>Arte · 82</title>
 </head>
@@ -38,6 +40,12 @@
         <a class="subRight" href="HTML/about.html">About</a>
     </div>
 </div>
+
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="">
+    <p id="modal-description"></p>
+  </div>
 
 <!-- Grid Column Display -->
 <div class="grid">
@@ -116,7 +124,5 @@
         <img class="pic" src="Photos/ev40.jpg" loading="lazy" alt="Image">
     </div>
 </div>
-
-<script src="JS/collection.js"></script>
 </body>
 </html>
