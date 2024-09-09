@@ -1,27 +1,20 @@
 {
   "ev1":{
-    "src": "Photos/ev1.jpg",
-    "description": "Description for Image 1",
     "name":"Evan",
     "surname":"Meyers",
     "title":"Blossom of the Saint1",
     "social":"evan__meyers"
   },
   "ev2":{
-    "src": "ev2.jpg",
-    "description": "Description for Image 2",
     "name":"Evan",
     "surname":"Meyers",
     "title":"Blossom of the Saint2",
     "social":"evan__meyers"
   },
   "ev3":{
-    "src": "ev3.jpg",
-    "description": "Description for Image 3",
     "name":"Evan",
     "surname":"Meyers",
     "title":"Blossom of the Saint3",
     "social":"evan__meyers"
   }
 }
-

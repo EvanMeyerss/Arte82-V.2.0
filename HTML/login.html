@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <!-- widget stuff here -->
+    <script src="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/js/okta-sign-in.min.js" type="text/javascript"></script>
+    <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-sign-in.min.css" type="text/css" rel="stylesheet"/>
+    <link href="https://ok1static.oktacdn.com/assets/js/sdk/okta-signin-widget/2.16.0/css/okta-theme.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div id="okta-login-container"></div>
+<!-- use the Okta widget to power authentication! -->
+<script type="text/javascript">
+    var oktaSignIn = new OktaSignIn({
+        baseUrl: "dev-31782650.okta.com",
+        clientId: "0oajj13qhpQPzLTyP5d7",
+        authParams: {
+            issuer: "default",
+            responseType: ['token', 'id_token'],
+            display: 'page'
+        }
+    });
+
+    if (oktaSignIn.token.hasTokensInUrl()) {
+        oktaSignIn.token.parseTokensFromUrl(
+            // If we get here, the user just logged in.
+            function success(res) {
+                var accessToken = res[0];
+                var idToken = res[1];
+
+                oktaSignIn.tokenManager.add('accessToken', accessToken);
+                oktaSignIn.tokenManager.add('idToken', idToken);
+
+                window.location.hash='';
+                document.getElementById("messageBox").innerHTML = "Hello, " + idToken.claims.email + "! You just logged in! :)";
+            },
+            function error(err) {
+                console.error(err);
+            }
+        );
+    } else {
+        oktaSignIn.session.get(function (res) {
+            // If we get here, the user is already signed in.
+            if (res.status === 'ACTIVE') {
+                document.getElementById("messageBox").innerHTML = "Hello, " + res.login + "! You are *still* logged in! :)";
+                return;
+            }
+            oktaSignIn.renderEl(
+                { el: '#okta-login-container' },
+                function success(res) {},
+                function error(err) {
+                    console.error(err);
+                }
+            );
+        });
+    }
+</script>
+</body>
+</html>
