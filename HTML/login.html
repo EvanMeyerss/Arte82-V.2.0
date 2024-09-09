@@ -31,9 +31,8 @@
         redirectUri: "https://arte82.com/gallery.html",
         authParams: {
             issuer: "https://dev-31782650.okta.com/oauth2/default",
-            responseType: ['code'],  // Use 'code' for Authorization Code Flow
-            scopes: ['openid', 'profile', 'email'],  // Specify necessary OAuth scopes
-            pkce: true  // Use PKCE (Proof Key for Code Exchange)
+            responseType: ['code'],
+            display: 'page'
         }
     });
 
