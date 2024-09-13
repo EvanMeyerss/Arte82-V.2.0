@@ -1,4 +1,4 @@
-# Arte82-V.7.0
+# Arte82-V.2.0
 ### HTML, CSS, and Javascript code for Arte82
 Purpose of the website is to allow artists from the Northwest Arkansas region to showcase their art.
 
