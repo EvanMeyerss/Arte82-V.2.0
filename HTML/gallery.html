@@ -9,120 +9,114 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <link rel="icon" href="Misc%20Assets/favicon.png">
+    <link rel="icon" href="src/main/resources/static/Misc%20Assets/favicon.png">
 
     <!--  Style Sheets & Javascripts  -->
     <link rel="stylesheet" href="../CSS/master.css">
     <link rel="stylesheet" href="../CSS/gallery.css">
 
-<!--    <link rel="stylesheet" type="text/css"-->
-<!--          media="screen and (max-device-width: 480px)"-->
-<!--          href="Stylesheets/gallery-mobile.css"/>-->
+    <!--    <link rel="stylesheet" type="text/css"-->
+    <!--          media="screen and (max-device-width: 480px)"-->
+    <!--          href="Stylesheets/gallery-mobile.css"/>-->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src ="Modal/collection.js"></script>
+    <script src ="../Javascript/collection.js"></script>
 
     <title>Arte·82</title>
 </head>
 <body>
 <!-- Navigation Bar -->
-<div class="navbar">
-    <div class="menuCenter">
-        <a href="../HTML/gallery.html" class="active"><img id="icon" src="../Misc%20Assets/logo.png" alt="icon"></a>
-    </div>
 
-    <div class="menuL">
-        <a class="subLeft" href="../HTML/gallery.html">Gallery</a>
-        <a class="subRight" href="../HTML/collections.html">Collections</a>
-    </div>
-<!-- test -->
-    <div class="menuR">
-        <a class="subLeft" href="../HTML/login.html">Login</a>
-        <a class="subRight" href="../HTML/about.html">About</a>
-    </div>
-</div>
-
-<div id="modal" class="modal">
+<!-- <div id="modal" class="modal">
     <span class="close" onclick="closeModal()"></span>
     <img id="modal-image" src="" alt="">
     <p id="modal-description"></p>
-  </div>
+</div> -->
 
-<!-- Grid Column Display -->
+<!-- Navigation Bar -->
+<div class="home">
+    <img id="TitlePic" src="../Photos/test.jpg" loading="eager" alt="Image">
+    <div class="navbar">
+           <h1 id="centeredText">Arte·82</h1>
+   </div> 
+</div>
+<!-- gallery display -->
 <div class="grid">
+    <!-- <div class="line"></div> Add this line div -->
     <div class="gallery1">
-        <img class="pic" src="../Photos/ev001.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev002.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev007.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev008.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev009.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev016.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev017.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev018.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev019.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev020.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev041.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev042.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev043.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev044.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev045.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev046.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev047.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev048.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev049.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev050.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev061.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev062.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev063.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev064.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev065.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev1.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev2.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev7.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev8.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev9.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev16.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev17.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev18.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev19.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev20.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev41.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev42.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev43.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev44.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev45.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev46.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev47.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev48.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev49.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev50.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev61.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev62.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev63.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev64.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev65.jpg" loading="lazy" alt="Image">
     </div>
 
     <div class="gallery3">
-        <img class="pic" src="../Photos/ev005.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev004.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev010.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev011.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev012.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev021.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev022.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev023.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev024.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev025.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev051.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev052.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev053.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev054.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev055.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev056.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev057.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev058.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev059.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev060.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev5.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev4.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev10.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev11.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev12.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev21.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev22.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev23.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev24.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev25.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev51.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev52.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev53.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev54.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev55.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev56.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev57.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev58.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev59.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev60.jpg" loading="lazy" alt="Image">
+
     </div>
 
     <div class="gallery2">
-        <img class="pic" src="../Photos/ev003.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev006.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev013.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev014.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev015.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev026.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev027.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev028.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev029.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev030.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev031.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev032.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev033.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev034.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev035.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev036.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev037.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev038.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev039.jpg" loading="lazy" alt="Image">
-        <img class="pic" src="../Photos/ev040.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev3.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev6.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev13.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev14.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev15.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev26.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev27.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev28.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev29.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev30.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev31.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev32.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev33.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev34.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev35.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev36.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev37.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev38.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev39.jpg" loading="lazy" alt="Image">
+        <img class="pic" src="../Photos/ev40.jpg" loading="lazy" alt="Image">
     </div>
-</div>
 
+</div>
 </body>
 </html>

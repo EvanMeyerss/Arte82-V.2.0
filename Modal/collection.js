@@ -22,9 +22,6 @@ $.getJSON('Modal/info.json', function (json) {
     }
 });
 
-
-
-
 // Load JSON data
 // fetch('info.json')
     // .then(response => response.json())
