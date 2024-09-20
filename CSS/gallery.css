@@ -1,40 +1,35 @@
-.navbar{
-  position: absolute;
-  top: 25%; /* Adjust this to position vertically */
-  left: 50%; /* Center it horizontally */
-  transform: translate(-50%, -50%); /* Perfectly center it */
-  /* background-color: rgba(254, 254, 240, .9); */
+/* .navbar{
+  position: sticky;
+  top: 75vh;  
+  z-index: 10; 
   background: rgba(0, 0, 0, 0);
   border-radius: 0 0 35% 35%;
   z-index:1;
   font-family: "Agbalumo",sans-serif;
-  /* display: flex; */
+  display: flex; 
   align-items: center;
   padding: 2.5%;
-  transition: position 0.3s ease;
-}
-
-.line {
-  width: 80%; /* Full width */
-  height: 1vh; /* Line thickness */
-  background-color: black; /* Line color */
-  margin: 20px 0; /* Remove any default margins */
-}
+} */
 
 #centeredText{
+  transform: translate(-50%, 50%);
+  left: 50%;
   font-size: clamp(24px, 10vw, 98px);
-  line-height: 1.2;
   margin: 0;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
   color: rgb(241, 240, 237);
   text-align: center;
   text-shadow: 0.125vw 0.125vw rgb(162, 53, 149);
-    
+  position: sticky;
+  z-index: 2;
 }
 
 #TitlePic{ 
     width: 100vw;
     height: auto;
-    max-height: 80vh;
+    max-height: 70vh;
     object-fit: cover;
     object-position:center;
     /* display: flex;  Enable flexbox */
@@ -43,19 +38,26 @@
     text-align: center;  /* Ensure the text itself is centered */
 }
 
-/*for phone */
-@media only screen and (max-width: 768px) and (orientation: portrait) {
+/*for making the image height resize well when skrinking height */
+@media only screen and (max-height: 700px) {
   #TitlePic {
-      width: 100vw;
-      height: auto;
+      max-height: 100vh;
   }
-} 
+}
+
+@media only screen and (max-height: 250px) {
+  .navbar {
+      display: none;
+  }
+}
 
 .home{
     position: relative;
     width: 100%;  /* Full width of the viewport */
     /* overflow: hidden;   */
+    max-height:100vh;
     height:auto;
+    overflow: hidden
 }
 
 .grid {
@@ -112,9 +114,9 @@
     margin-bottom:.1vh;
 }
 
-a{
+/* a{
     height: auto;
-}
+} */
 
 .modal {
     display: none;

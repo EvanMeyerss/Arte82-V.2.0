@@ -24,7 +24,7 @@ html::-webkit-scrollbar {
 
 body {
     background-color: rgb(254, 254, 240);
-    height: auto;
+    height: 100%;
 }
 
 #icon {
