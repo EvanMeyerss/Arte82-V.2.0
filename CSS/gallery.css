@@ -33,7 +33,8 @@
 
 #TitlePic{ 
     width: 100vw;
-    height: calc(100vh - 95px);;
+    height: auto;
+    max-height: 80vh;
     object-fit: cover;
     object-position:center;
     /* display: flex;  Enable flexbox */
@@ -42,19 +43,13 @@
     text-align: center;  /* Ensure the text itself is centered */
 }
 
+/*for phone */
 @media only screen and (max-width: 768px) and (orientation: portrait) {
   #TitlePic {
       width: 100vw;
-      height: 60vh; /* Only take up half the height */
+      height: auto;
   }
-}
-
-@media only screen and (max-height: 300px) {
-  #TitlePic {
-      width: 100vw;
-      height: 100vh; /* Only take up half the height */
-  }
-}
+} 
 
 .home{
     position: relative;
