@@ -1,29 +1,29 @@
-/* .navbar{
-  position: sticky;
-  top: 75vh;  
-  z-index: 10; 
-  background: rgba(0, 0, 0, 0);
-  border-radius: 0 0 35% 35%;
-  z-index:1;
-  font-family: "Agbalumo",sans-serif;
-  display: flex; 
-  align-items: center;
-  padding: 2.5%;
-} */
+nav {
+  background: rgba(0, 0, 0, 0.0); /* Optional: for visibility */
+  text-align: center; 
+  font-family: "Agbalumo", sans-serif;
+}
 
 #centeredText{
-  transform: translate(-50%, 50%);
-  left: 50%;
-  font-size: clamp(24px, 10vw, 98px);
-  margin: 0;
-  display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  color: rgb(241, 240, 237);
-  text-align: center;
-  text-shadow: 0.125vw 0.125vw rgb(162, 53, 149);
-  position: sticky;
-  z-index: 2;
+  position: absolute; /* Overlay directly on the image */
+    top: 0; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0%); /* Adjust for centering */
+    font-size: clamp(24px, 10vw, 98px); /* Responsive font size */
+    margin: 0;
+    display: flex; /* Use flexbox for centering text */
+    justify-content: center;
+    align-items: center;
+    color: rgb(249, 248, 245);
+    text-shadow: 0.125vw 0.125vw rgb(162, 53, 149);
+    z-index: 2; /* Ensure it appears above the image */
+}
+
+.sticky {
+  position: sticky; /* Change to sticky when scrolling */
+  top: 0; /* Stick to the top of the viewport */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: add a background */
+  z-index: 3; /* Ensure it stays above other content */
 }
 
 #TitlePic{ 
@@ -44,32 +44,11 @@
   }
 }
 
-/* @media only screen and (max-height: 3000px) {
-  #TitlePic {
-      max-height: 70vh;
-  }
-} */
-
-/* @media only screen and (max-height: 250px) {
-  .navbar {
-      display: none;
-  }
-} */
-
-/* .home{
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 25vh;
-    overflow: hidden
-} */
-
 .grid {
     background-color: rgb(254, 254, 240);
     display:flex;
     flex-wrap:wrap;
 }
-
 
 .gallery1 {
     margin-left: 4%;
@@ -118,9 +97,9 @@
     margin-bottom:.1vh;
 }
 
-/* a{
-    height: auto;
-} */
+ a{
+    text-decoration: none; /* Remove underline */
+} 
 
 .modal {
     display: none;
