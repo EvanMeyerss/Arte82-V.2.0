@@ -1,11 +1,7 @@
-nav {
-  background: rgba(0, 0, 0, 0.0); /* Optional: for visibility */
-  text-align: center; 
-  font-family: "Agbalumo", sans-serif;
-}
+
 
 #centeredText{
-  position: absolute; /* Overlay directly on the image */
+  position: fixed; /* Overlay directly on the image */
     top: 0; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, 0%); /* Adjust for centering */
@@ -17,13 +13,6 @@ nav {
     color: rgb(249, 248, 245);
     text-shadow: 0.125vw 0.125vw rgb(162, 53, 149);
     z-index: 2; /* Ensure it appears above the image */
-}
-
-.sticky {
-  position: sticky; /* Change to sticky when scrolling */
-  top: 0; /* Stick to the top of the viewport */
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: add a background */
-  z-index: 3; /* Ensure it stays above other content */
 }
 
 #TitlePic{ 

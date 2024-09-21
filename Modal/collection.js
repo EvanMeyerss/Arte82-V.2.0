@@ -22,19 +22,6 @@ $.getJSON('Modal/info.json', function (json) {
     }
 });
 
-const centeredText = document.getElementById('centeredText');
-
-window.addEventListener('scroll', () => {
-    const textRect = centeredText.getBoundingClientRect();
-    
-    // Check if the bottom of the header is above the top of the viewport
-    if (textRect.bottom < 0) {
-        centeredText.classList.add('sticky');
-    } else {
-        centeredText.classList.remove('sticky');
-    }
-});
-
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
