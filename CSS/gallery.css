@@ -1,4 +1,34 @@
+.menu-icon {
+  position: fixed; /* Position it over the image */
+  top: 20px; /* Adjust to your desired position */
+  right: 20px; /* Adjust to your desired position */
+  cursor: pointer; /* Change cursor on hover */
+  z-index: 2; /* Make sure it’s above other content */
+}
 
+#optionsMenu {
+  position: fixed; /* Position it absolutely */
+  top: 60px; /* Adjust based on the icon's position */
+  right: 20px; /* Align with the icon */
+  background: rgba(255, 255, 255, 0.9); /* Background color */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 5px; /* Rounded corners */
+  z-index: 2; /* Ensure it appears above other content */
+  display: none; /* Hide initially */
+}
+
+#optionsMenu ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+#optionsMenu li {
+  padding: 10px; /* Add some padding */
+}
+
+.hidden {
+  display: none; /* Helper class to hide elements */
+}
 
 #centeredText{
   position: fixed; /* Overlay directly on the image */
