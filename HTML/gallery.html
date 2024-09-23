@@ -36,21 +36,31 @@
 <img id="TitlePic" src="../Photos/test.jpg" loading="eager" alt="Image">
 
 <!-- Navigation Bar -->
-<img  id="menuIcon" width="32" height="32" src="https://img.icons8.com/windows/32/sorting-options.png" alt="sorting-options" class="menu-icon"/>
-<!-- <img id="menuIcon" src="../path/to/your/icon.png" alt="Menu" class="menu-icon"> -->
+<img id="menuIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABrUlEQVR4nO3aQVLbMABGYR2jYdWWS1AWhfZGgd6lwEkKpb1FW84Q2ACZSXePEeMVE7Mjv2y97wKRrNiyNa8USZIkSZIkSZKmB/gCXAD/gDXTtx7mcg4cl1YB+8Av5u8n8KG0BDgE7ujHLfCptAB4D6zoz12961tYgGv69Tt98b+mr0ADchvz8LazzQZYAu/KxAEL4GSY0zZnycHdjAxqWWYGOB2Z69/koB5HBjX5f/5LdU4jc30oKfXHO1qAvZG53rf4CDopMwN8a/ERVD/Pt9kMG9eizGMTPgX+j8z1e/rcp3efYwswLMIV/foRvfjDAvR8FPGxtKAeTA0HVL1YAQelJfWItpPH0WW960urgKP6eV5fz175UJuSR+BPfduJb7iSJEkaYxcUYhcUZBcU1Plh3H4LC2AXlGIX9Mwu6C3ZBTXCLijMLijMLijMLijELqh9dkFBdkFBdkFBdkFBdkE7ZhckSZLUPrugELugILugILugMLugILugZ3ZBb8kuqBF2QWF2QWF2QWF2QSF2Qe2zCwqyCwqyCwqyCwqyC9oxuyBJkiRJkiRJUpm4J9QIoRjFOBLJAAAAAElFTkSuQmCC" alt="sorting-options" class="menu-icon" onclick="toggleMenu()" />
+<!-- Transparent overlay -->
+<div id="overlay" class="hidden"></div>
 
 <!-- Options Menu -->
 <div id="optionsMenu" class="hidden">
+        <h2>Pages</h2>
+    <hr class="divider">
     <ul>
-        <li><a href="../HTML/about.html">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="../HTML/login.html">Login</a></li>
-        <li><a href="../HTML/collections.html">News Letter</a></li>
+        <li><a href="HTML/collections.html">News Letter</a></li>
     </ul>
+</div>
+
+<div class="navbar">
+    <a href="../HTML/gallery.html"><img id="icon" src="../Misc%20Assets/logo.png" alt="icon"></a>
+    <img id="menuIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAABrUlEQVR4nO3aQVLbMABGYR2jYdWWS1AWhfZGgd6lwEkKpb1FW84Q2ACZSXePEeMVE7Mjv2y97wKRrNiyNa8USZIkSZIkSZKmB/gCXAD/gDXTtx7mcg4cl1YB+8Av5u8n8KG0BDgE7ujHLfCptAB4D6zoz12961tYgGv69Tt98b+mr0ADchvz8LazzQZYAu/KxAEL4GSY0zZnycHdjAxqWWYGOB2Z69/koB5HBjX5f/5LdU4jc30oKfXHO1qAvZG53rf4CDopMwN8a/ERVD/Pt9kMG9eizGMTPgX+j8z1e/rcp3efYwswLMIV/foRvfjDAvR8FPGxtKAeTA0HVL1YAQelJfWItpPH0WW960urgKP6eV5fz175UJuSR+BPfduJb7iSJEkaYxcUYhcUZBcU1Plh3H4LC2AXlGIX9Mwu6C3ZBTXCLijMLijMLijMLijELqh9dkFBdkFBdkFBdkFBdkE7ZhckSZLUPrugELugILugILugMLugILugZ3ZBb8kuqBF2QWF2QWF2QWF2QSF2Qe2zCwqyCwqyCwqyCwqyC9oxuyBJkiRJkiRJUpm4J9QIoRjFOBLJAAAAAElFTkSuQmCC" alt="sorting-options" class="menu-icon" onclick="toggleMenu()" />
 </div>
 
 <a href="../HTML/gallery.html">
 <h1 id = "centeredText">Arte·82</h1>
 </a>
+
+<hr class="styled-line">
 
 <!-- gallery display -->
 <div class="grid">

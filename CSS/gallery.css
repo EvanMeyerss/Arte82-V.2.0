@@ -1,37 +1,79 @@
 .menu-icon {
-  position: fixed; /* Position it over the image */
+  position: absolute; /* Position it over the image */
   top: 20px; /* Adjust to your desired position */
   right: 20px; /* Adjust to your desired position */
-  cursor: pointer; /* Change cursor on hover */
-  z-index: 2; /* Make sure it’s above other content */
+  cursor: pointer; /* Makes the icon clickable */
+  z-index: 1100; /* Above the menu and overlay */
+  width: clamp(2px, 4vw, 40px);
 }
 
-#optionsMenu {
-  position: fixed; /* Position it absolutely */
-  top: 60px; /* Adjust based on the icon's position */
-  right: 20px; /* Align with the icon */
-  background: rgba(255, 255, 255, 0.9); /* Background color */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 5px; /* Rounded corners */
-  z-index: 2; /* Ensure it appears above other content */
-  display: none; /* Hide initially */
+#icon{
+  width: 25vw;
+  height:auto;
 }
 
-#optionsMenu ul {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove padding */
-}
+.navbar{
+  position: fixed; 
+  border-radius: 0 0 35% 35%;
+  z-index:1;
+  width:100vw;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Space between left and right elements */
+  align-items: center; /* Center content vertically */
+  background-color: #fefdfda5; /* Optional: background color */
 
-#optionsMenu li {
-  padding: 10px; /* Add some padding */
 }
 
 .hidden {
-  display: none; /* Helper class to hide elements */
+  display: none;
+}
+
+.menu-icon:hover {
+  opacity: 0.8; /* Hover effect */
+}
+
+/* Other CSS remains the same for the menu and overlay */
+#optionsMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15vw;
+  height: 100vh;
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align items to the left */
+  justify-content: left;
+  padding: 20px;
+  z-index: 1001;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.show-menu #optionsMenu {
+  transform: translateX(0); /* Slide in the menu */
+}
+
+.show-menu #overlay {
+  display: block; /* Show the overlay */
 }
 
 #centeredText{
-  position: fixed; /* Overlay directly on the image */
+  position: absolute; /* Overlay directly on the image */
     top: 0; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, 0%); /* Adjust for centering */
@@ -42,7 +84,7 @@
     align-items: center;
     color: rgb(249, 248, 245);
     text-shadow: 0.125vw 0.125vw rgb(162, 53, 149);
-    z-index: 2; /* Ensure it appears above the image */
+    z-index: 101; /* Ensure it appears above the image */
 }
 
 #TitlePic{ 
@@ -52,6 +94,7 @@
     object-fit: cover;
     position:relative;
     display: block;
+    z-index: 100;
     /* transition: max-height 0.5s ease-in-out, transform 0.5s ease-in-out; */
 }
 
@@ -118,6 +161,7 @@
 
  a{
     text-decoration: none; /* Remove underline */
+    color: black;
 } 
 
 .modal {
@@ -148,3 +192,24 @@
     font-size: 30px;
     cursor: pointer;
   }
+
+  .divider {
+    border: 0; /* Remove default border */
+    height: 1vh; /* Line height */
+    width: 80%;
+    background-color: #000000; /* Line color */
+}
+
+#optionsMenu ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+#optionsMenu a {
+    text-decoration: none; /* Remove underline */
+    color: #191919; /* Link color */
+}
+
+#optionsMenu a:hover {
+    color: #5e5e5e; /* Darker color on hover */
+}

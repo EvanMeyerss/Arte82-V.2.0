@@ -26,26 +26,18 @@ window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
 
-//code below for options menu
-const menuIcon = document.getElementById('menuIcon');
-const optionsMenu = document.getElementById('optionsMenu');
 
-menuIcon.addEventListener('click', () => {
-    // Toggle the display of the options menu
-    if (optionsMenu.style.display === 'none' || optionsMenu.style.display === '') {
-        optionsMenu.style.display = 'block';
-    } else {
-        optionsMenu.style.display = 'none';
-    }
-});
-
-
-// Optional: Hide the menu when clicking outside
-window.addEventListener('click', (event) => {
-    if (!menuIcon.contains(event.target) && !optionsMenu.contains(event.target)) {
-        optionsMenu.style.display = 'none';
-    }
-});
+function toggleMenu() {
+    document.body.classList.toggle('show-menu');
+    document.body.classList.toggle('no-scroll');
+  }
+// // Optional: Hide the menu when clicking outside
+// window.addEventListener('click', (event) => {
+//     if (!menuIcon.contains(event.target) && !optionsMenu.contains(event.target)) {
+//         optionsMenu.style.display = 'none';
+//         overlay.style.display = 'none';
+//     }
+// });
 //code above for options menu
 
 // Load JSON data

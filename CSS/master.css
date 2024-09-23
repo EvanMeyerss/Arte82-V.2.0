@@ -15,6 +15,7 @@
 
 html {
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 html::-webkit-scrollbar {
@@ -22,7 +23,7 @@ html::-webkit-scrollbar {
 }
 
 body {
-    background-color: rgb(254, 254, 240);
+    background-color: rgb(255, 255, 255);
     position: relative; /* Relative container for positioning */
     width: 100%;
     height: auto;
@@ -34,48 +35,44 @@ body.loaded {
     opacity: 1; /* Fully visible when loaded */
 }
 
-/* .navbar a {
+.navbar a {
     text-decoration: none;
     color: rgb(233, 177, 83);
-    /*text-shadow: 2px 2px rgb(221, 119, 142);
     font-weight: bold;
     text-transform: uppercase;
-} */
+} 
 
-/* .menuCenter {
+ .menuCenter {
     float: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} */
+} 
 
 
-/* .menuR {
+.menuR {
     float: right;
     width: 30%;
     list-style: none;
-    /* display: inline-block; 
     margin: 0 10px;
     transform: translateX(-4%);
     text-decoration: none;
     color: black;
-    /*font-weight: bold;
     text-transform: uppercase;
 
 
-} */
+} 
 
-/* .menuL {
+ .menuL {
     list-style: none;
     width: 30%;
-    /*display: inline-block;
     margin: 0 10px;
     transform: translateX(4%);
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-} */
+} 
 
 .menuL .subLeft {
     margin-right: 10%;
